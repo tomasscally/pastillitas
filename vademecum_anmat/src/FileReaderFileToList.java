@@ -19,7 +19,7 @@ public class FileReaderFileToList {
 
             // Open the file that is the first
             // command line parameter
-            FileInputStream fstream = new FileInputStream("src/main/laboratorios.csv");
+            FileInputStream fstream = new FileInputStream("laboratorios.csv");
             // Get the object of DataInputStream
             DataInputStream in = new DataInputStream(fstream);
             BufferedReader br = new BufferedReader(new InputStreamReader(in));
