@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.List;
 
-public class FileReaderFileToList {
+public class Laboratorios {
 
 
     public static void main(String arg[]){
