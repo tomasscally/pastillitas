@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RegisterCounter>
+    <resultado>OK</resultado>
+    <cantidadTotal>19413</cantidadTotal>
+    <porcentajeTotal>100.0</porcentajeTotal>
+    <ItemList>
+        <item>
+            <cantidad>11040</cantidad>
+            <descripcion>Establecimiento de salud sin internación de diagnóstico y tratamiento</descripcion>
+            <id>50</id>
+            <porcentaje>56.9</porcentaje>
+        </item>
+        <item>
+            <cantidad>2316</cantidad>
+            <descripcion>Establecimiento de salud con internación general</descripcion>
+            <id>10</id>
+            <porcentaje>11.9</porcentaje>
+        </item>
+        <item>
+            <cantidad>2066</cantidad>
+            <descripcion>Establecimiento de salud sin internación de diagnóstico</descripcion>
+            <id>51</id>
+            <porcentaje>10.6</porcentaje>
+        </item>
+        <item>
+            <cantidad>1406</cantidad>
+            <descripcion>Establecimiento de salud con internación especializada en tercera edad</descripcion>
+            <id>15</id>
+            <porcentaje>7.2</porcentaje>
+        </item>
+        <item>
+            <cantidad>947</cantidad>
+            <descripcion>Establecimiento de salud sin internación de tratamiento</descripcion>
+            <id>52</id>
+            <porcentaje>4.9</porcentaje>
+        </item>
+        <item>
+            <cantidad>782</cantidad>
+            <descripcion>Establecimiento de salud complementario</descripcion>
+            <id>53</id>
+            <porcentaje>4.0</porcentaje>
+        </item>
+        <item>
+            <cantidad>378</cantidad>
+            <descripcion>Establecimiento de salud con internación especializada en otras especialidades</descripcion>
+            <id>14</id>
+            <porcentaje>1.9</porcentaje>
+        </item>
+        <item>
+            <cantidad>354</cantidad>
+            <descripcion>Establecimiento de salud con internación especializada en salud mental</descripcion>
+            <id>13</id>
+            <porcentaje>1.8</porcentaje>
+        </item>
+        <item>
+            <cantidad>76</cantidad>
+            <descripcion>Establecimiento de salud con internación especializada en maternidad/m.infantil</descripcion>
+            <id>12</id>
+            <porcentaje>0.4</porcentaje>
+        </item>
+        <item>
+            <cantidad>48</cantidad>
+            <descripcion>Establecimiento de salud con internación especializada en pediatría</descripcion>
+            <id>11</id>
+            <porcentaje>0.2</porcentaje>
+        </item>
+    </ItemList>
+</RegisterCounter>
