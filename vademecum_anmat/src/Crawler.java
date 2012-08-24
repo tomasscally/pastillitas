@@ -1,7 +1,11 @@
 import com.thoughtworks.selenium.SeleneseTestCase;
 
+import java.util.List;
+
 
 public class Crawler extends SeleneseTestCase {
+    private List<String> linksFiles;
+
     public void setUp() throws Exception {
         setUp("http://www.anmat.gov.ar/", "*chrome");
     }
@@ -10,16 +14,17 @@ public class Crawler extends SeleneseTestCase {
 
             selenium.type("id=txt_laboratorio", "Bioprofarma");
             selenium.click("id=btn_consultar");
-            waitForElement("Se ha utilizado el siguiente filtro para la búsqueda:");
+            waitForElementPresent("Se ha utilizado el siguiente filtro para la búsqueda:");
             Integer cantPaginas = buscarCantidadPaginasLabo();
             if(cantPaginas!=0){
-                Thread.sleep(30000);
-                int paginaInicio=1;
-                while(paginaInicio < cantPaginas+1){
+                Thread.sleep(5000);
+                int paginaActual=1;
+                while(paginaActual < cantPaginas+1){
                     procesarPagina();
                     selenium.click("id=pagina_siguiente");
-                    System.out.println(paginaInicio);
-                    paginaInicio++;
+                    Thread.sleep(6000);
+                    System.out.println("La pagina actual es: "+paginaActual);
+                    paginaActual++;
                 }
             }
             selenium.click("id=div_volver");
@@ -27,11 +32,37 @@ public class Crawler extends SeleneseTestCase {
     }
 
     private void procesarPagina() {
-        String surce = selenium.getHtmlSource();
+
+        for (int productoActual =1; productoActual<6; productoActual++){
+            String element = "//*[@id=\"td_registros\"]/div[" +productoActual + "]";
+            String producto = selenium.getText(element);
+            List<String> pdfURLs = getLinksFiles();
+            //procesarProducto(producto, pdfURLs);
+            ParserProducto.parse(producto);
+        }
     }
 
-    private void waitForElement(String textContent) {
+    private void procesarProducto(String producto, List<String> pdfURLs) {
+
+        for (String pdfURL : pdfURLs) {
+            //saveFile();
+        }
+
+        ParserProducto.parse(producto);
+    }
+
+    private void waitForElementPresent(String textContent) {
         while(!selenium.getHtmlSource().contains(textContent)){
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private void waitForElementAbsent(String textContent) {
+        while(selenium.getHtmlSource().contains(textContent)){
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
@@ -49,6 +80,10 @@ public class Crawler extends SeleneseTestCase {
         }
 
         return ret;
+    }
+
+    public List<String> getLinksFiles() {
+        return linksFiles;
     }
 }
 

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Establecimiento>
+    <resultado>OK</resultado>
+    <codIndecProvincia>2</codIndecProvincia>
+    <codigo>10020012315239</codigo>
+    <dependencia>Privado</dependencia>
+    <fechaModificacion>15/05/2012</fechaModificacion>
+    <fechaRegistro>28/08/2010</fechaRegistro>
+    <nombre>SANATORIO DE LA TRINIDAD PALERMO</nombre>
+    <provincia>CABA</provincia>
+    <tipologia>Establecimiento de salud con internación general</tipologia>
+    <categoriaDeLaTipologia>Alto riesgo con terapia intensiva</categoriaDeLaTipologia>
+    <codIndecDepto>1</codIndecDepto>
+    <codIndecLocalidad>010</codIndecLocalidad>
+    <coordenadasDeMapa>
+        <latitud>-34.57492422192008</latitud>
+        <longitud>-58.423941135406494</longitud>
+        <nivelZoom>16</nivelZoom>
+    </coordenadasDeMapa>
+    <depto>Ciudad de Buenos Aires</depto>
+    <domicilio>
+        <codigoPostal>1425</codigoPostal>
+        <direccion>Cerviño 4720</direccion>
+    </domicilio>
+    <localidad>2001010 - Ciudad De Buenos Aires (Ciudad De Buenos Aires - Caba)</localidad>
+    <origenDelFinanciamiento>Privado</origenDelFinanciamiento>
+    <participaciones>
+        <planNacer>NO</planNacer>
+        <programaMedicosComunitarios>NO</programaMedicosComunitarios>
+        <programaRemediar>NO</programaRemediar>
+        <redDirectoresHospitales>NO</redDirectoresHospitales>
+        <redEstablecimientosCCC>No participa</redEstablecimientosCCC>
+        <redNOMIVAC>NO</redNOMIVAC>
+        <registroHPGD>1</registroHPGD>
+        <sistemaNacionalVigilanciaSalud>NO</sistemaNacionalVigilanciaSalud>
+    </participaciones>
+    <telefono1>
+        <numero>(011) 4127-5500</numero>
+        <tipo>Conmutador</tipo>
+    </telefono1>
+    <telefono2>
+        <numero>(011) 4777-3333</numero>
+        <tipo>Conmutador</tipo>
+    </telefono2>
+    <telefono3>
+        <numero>null</numero>
+        <tipo>null</tipo>
+    </telefono3>
+    <telefono4>
+        <numero>null</numero>
+        <tipo>null</tipo>
+    </telefono4>
+</Establecimiento>
